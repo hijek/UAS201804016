@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+    tools:context=".RvMouseData"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="80dp">
+
+        <TextView
+            android:id="@+id/txtdashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:fontFamily="casual"
+            android:text="Gaming Gear Solution"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/txtdashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="casual"
+            android:text="Mouse Data"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="52dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/mainmouse"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_views"
+        tools:ignore="MissingConstraints"/>
+</LinearLayout>
